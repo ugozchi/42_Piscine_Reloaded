@@ -1,17 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: uzanchi <uzanchi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/02 12:08:24 by uzanchi           #+#    #+#             */
+/*   Updated: 2024/05/02 12:21:00 by uzanchi          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <fcntl.h>
 
 void	disp_file(int fd)
 {
-	char buffer;
+	char	buffer;
 
 	while (read(fd, &buffer, 1) != 0)
 		write(1, &buffer, 1);
 }
 
-int		main(int ac, char **av)
+int	main(int ac, char **av)
 {
-	int fd;
+	int	fd;
 
 	if (ac != 2)
 	{

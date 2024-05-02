@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: uzanchi <uzanchi@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/02 12:06:47 by uzanchi           #+#    #+#             */
+/*   Updated: 2024/05/02 12:21:48 by uzanchi          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
 int	*ft_range(int min, int max)
@@ -7,7 +19,7 @@ int	*ft_range(int min, int max)
 
 	if (min >= max)
 		return (NULL);
-	output = malloc((max -min) * sizeof(int));
+	output = malloc((max - min) * sizeof(int));
 	if (!output)
 		return (NULL);
 	while (min + i < max)
