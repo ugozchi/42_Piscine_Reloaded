@@ -6,7 +6,7 @@
 /*   By: uzanchi <uzanchi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 12:06:47 by uzanchi           #+#    #+#             */
-/*   Updated: 2024/05/02 12:21:48 by uzanchi          ###   ########.fr       */
+/*   Updated: 2024/05/13 15:51:54 by uzanchi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	*ft_range(int min, int max)
 	int	*output;
 	int	i;
 
+	i = 0;
 	if (min >= max)
 		return (NULL);
 	output = malloc((max - min) * sizeof(int));
