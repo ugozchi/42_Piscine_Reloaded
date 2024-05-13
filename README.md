@@ -7,4 +7,5 @@ Voici le [sujet](subject.pdf).
 ## Résultats
 | |
 | --- |
-| <img src="" /> |
+| <img src="./img/note.png" /> |
+| <img src="./img/moulinette.png" /> |
